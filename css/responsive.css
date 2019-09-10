@@ -1,0 +1,60 @@
+@media only screen and (min-width: 861px) {
+    #hamburger {
+      display: none !important;
+    }
+  
+    .menu {
+      display: flex !important;
+    }
+  }
+  @media only screen and (max-width: 860px) {
+    .border-line  {
+      border: none !important
+    }
+    .mb-bt {
+      margin-bottom: 1em !important
+    }
+
+    .box {
+      margin-bottom: 1em !important
+    }
+    .news-con p {
+      margin-bottom: 1em !important
+    }
+
+    .banner-header p {
+      font-size: 1em !important;
+    }
+    .mb-area img {
+      width: 14px !important;
+    }
+    .logo img {
+      margin-bottom: 11px !important;
+  }
+    nav {
+      display: block; 
+      padding: 0;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    }
+  
+    .navLeft {
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .menu {
+      display: none;
+      background: #fff !important;
+    z-index: 99;
+    position: absolute;
+    }
+    .menu a {
+      border-top: 2px solid #eee;
+      padding: 10px;
+      padding: 7px 16px !important;
+    }
+    .menu a:hover {
+      box-shadow: none;
+      background: #fff;
+    }
+  }
