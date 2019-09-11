@@ -450,7 +450,7 @@ img.videosingle {
 }
 
 .owl-carousel {
-  direction: ltr;
+  direction: ltr !important;
 }
 
 #fixSlider img {
