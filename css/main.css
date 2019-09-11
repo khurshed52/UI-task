@@ -362,7 +362,12 @@ ul.weight-list li::before{
   color: #444;
 }
 
-div#divCal {
+#divCal thead {
+  color: #38c7a5;
+  font-weight: bold;
+}
+
+#divCal {
   direction: ltr;
 }
 
@@ -521,49 +526,41 @@ ul.footer-link li::before{
   margin-bottom: 10px;
 }
 
-.radio{
-  margin: .2rem;
+.radio-group div {
+  margin: 5px 0px 10px 0px;
 }
 
-.radio input[type=radio]{
-  position: absolute;
-  opacity: 0;
+.radio-group input[type="radio"] {
+  display:none;
 }
 
-.radio label{
-  display: inline-block;
-  margin-bottom: .5rem;
-  font-size: 13px;
-  color: #3e4448;
+.radio-group input[type="radio"] + label {
+  color: #969396;
+  font-size:14px;
 }
 
-.radio input[type=radio] + .radio-label:before {
-  content: '';
-  background: #f4f4f4;
-  border-radius: 100%;
-  border: 1px solid #b4b4b4;
-  display: inline-block;
-  width: 1.4em;
-  height: 1.4em;
-  position: relative;
-  top: .1em;
-  margin-right: 1em;
-  vertical-align: top;
-  cursor: pointer;
-  text-align: center;
-  -webkit-transition: all 250ms ease;
-  transition: all 250ms ease;
+.radio-group input[type="radio"] + label span {
+  display:inline-block;
+  width:19px;
+  height:19px;
+  margin: -1px -3px 0 9px;
+  vertical-align:middle;
+  cursor:pointer;
+  border-radius:  50%;
 }
 
-.radio input[type=radio]+.radio-label:before {
-  margin-left: 1em!important;
-  margin-right: inherit!important;
+.radio-group input[type="radio"] + label span {
+   background-color:#fff;
+   border: 1px solid #969396
 }
 
-.radio input[type=radio]:checked + .radio-label:before {
-  background-color: #ba8d59;
-  -webkit-box-shadow: inset 0 0 0 4px #f4f4f4;
-  box-shadow: inset 0 0 0 4px #f4f4f4;
+.radio-group input[type="radio"]:checked + label span{
+   background-color:#70d1bb;
+}
+
+.radio-group input[type="radio"] + label span,
+.radio-group input[type="radio"]:checked + label span {
+transition:background-color 0.4s linear;
 }
 
 .submit{
@@ -579,6 +576,10 @@ ul.footer-link li::before{
   border-radius: 5px;
   cursor: pointer;
   margin-left: 1em
+}
+
+.submit:hover {
+  background: #358572;
 }
 
 .border-line {
@@ -598,6 +599,10 @@ ul.footer-link li::before{
   -moz-border-radius: 5px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.cancel:hover {
+  background: rgb(194, 194, 194);
 }
 
 .newsletter input {
@@ -697,7 +702,7 @@ footer {
 
 .social {
   width: 57px;
-  height: 298px;
+  height: 285px;
   position: fixed;
   right: -21px;
   top: 30%;
