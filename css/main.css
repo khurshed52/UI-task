@@ -70,10 +70,11 @@ header {
     position: relative;
     min-height: 30vw;
     background: url('../images/banner.jpg');
-    background-repeat: repeat-x;
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100% !important;
     background-position: center center;
+    object-fit: contain
 }
 
 /*******menu css***********/
