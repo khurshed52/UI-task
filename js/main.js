@@ -1,14 +1,21 @@
 
 (function ($) {
     "use strict";
-
+   /*[ menu]
+    ===========================================================*/
  $('#hamburger').click(function() {
       $('.menu').slideToggle(300);
     });
 
+       /*[ popup]
+    ===========================================================*/
+
     $('.venobox').venobox({
       titleattr: 'data-title'
   });
+
+     /*[ popup custom]
+    ===========================================================*/
 
   $('.venobox_custom').venobox({
     framewidth: '600px',       
@@ -19,6 +26,9 @@
     numeratio: false,           
     infinigall: false         
 });   
+
+     /*[ animate box]
+    ===========================================================*/
 
 sal({
   threshold: 1,
